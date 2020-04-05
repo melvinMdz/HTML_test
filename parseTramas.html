@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click "Try it" to display the first array element, after a string split.</p>
+
+
+
+<!-- <input type="text" id="myInput" oninput="myFunction(100.00)"> -->
+<input type="text" id="myInput" onchange="myFunction(100.00)">
+
+
+
+<p id="demo"></p>
+
+<script>
+function myFunction(meta) 
+{
+
+
+  	var str =document.getElementById("myInput").value;
+    var metav = parseFloat(meta);
+  	var arr = str.split("*");
+    var interesv = "-";
+    var n = arr.length;
+    if(n != 1){
+    console.log("Se pudo parsear la cadena");
+    arr.forEach(function (elemento, indice) 
+  	{
+    	var trama = elemento.split("-");
+       // console.log(trama);
+        var desde = parseFloat(trama[0]);
+       // console.log(desde);
+        var hasta = parseFloat(trama[1]);
+       // console.log(hasta);
+        var interes = parseFloat(trama[2]);
+    	//console.log(interes);
+        
+    	if(desde <= metav && hasta <= metav)
+        {
+        
+        //	console.log('este es mi tramo ');
+            interesv = interes
+  		}
+        
+	});
+    document.getElementById("demo").innerHTML = "You wrote: " + interesv;
+	
+	
+	}else{
+    	 console.log("Ocurrio un problema al parsear la cadena");
+    }
+}
+</script>
+
+</body>
+</html>
