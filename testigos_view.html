@@ -1,21 +1,222 @@
 <html>
-<head>
-	
-</head>
-<body>
-	
-<select disabled="false">
-	<option value="1">Opcion 1</option>
-	<option value="2">Opcion 2</option>
-	<option value="3">Opcion 3</option>
-	<option value="4">Opcion 4</option>
-	<option value="5">Opcion 5</option>
 
-</select>
+    <head>
+    
+        
+        <style>
+            #tituloTestigoView h2
+            {
+                text-align: center;
+                font-family: Verdana,Arial;
+                background-color: cornflowerblue;
+                color: white;
+                text-transform: uppercase;
+            }
+            
+            #table2 table, #table2  tr, #table2  td ,#table2  input ,#table2  select
+            {
+                
+              padding: 12px 10px;
+              margin: 8px 0;
+              display: inline-block;
+             
+              border-radius: 4px;
+              box-sizing: border-box;
+                
+            }
+             #table1 table, #table1  tr, #table1  td ,#table1  input ,#table1  select
+            {
+                width: 25%;
+              padding: 12px 10px;
+              margin: 8px 0;
+             
+              border-radius: 4px;
+              box-sizing: border-box;
+                
+            }
+            
+    #table2 input:focus {
+        border: 1px solid blue;
+    }
+            
+    label.etiquetaTestig
+    {
+        font-family: Verdana, Arial;
+        font-size: 12;
+        font-weight: bold;
+    }
+            
+    .btn_enviar{
+        padding: 10px 16px;
+        margin: 4px 0;
+        border-radius: 4px;
+        cursor: pointer;
+        background-color: zX; 
+        color: black; 
+        border: 2px solid #DFE7E7;
+    }
+    .btn_enviar:hover {
+        background-color: #008CBA;
+        color: white;
+    }
+            
+</style>
+        
+    </head>
+    
+    <body>
+  
+        <div id="tituloTestigoView">
+ <h2>Representante Legal - Mantenimiento</h2>
+            </div>
+        <h2 id="sdgsd">Representante Legal - Apertura</h2>
+        <div  id="table1" align="center">
+            <table  border="0">
+                <tr>
+                    <td height="50" ><b> Caracterisitca especial: </b> </td>
+                    <td> vidente analfabeta</td>
+                </tr>
+                <tr>
+                    <td height="50"> <b> Cantidad de testigos: </b> </td>
+                    <td>2</td>
+                </tr>
+            </table>
+        </div>
+        
+        <br><br><br>
+        <div id="table2" align="center" >       
+          
+            
+            <table border="0" style="border-collapse: collapse;
+                width: 50%;">
+          
+                <tr>
+                    <td style="background-color: cornflowerblue;color: white;text-align: center;" height="50" colspan="2" style="text-align: center;">
+                        <label>Sum: $180</label>
+                    </td>
+                </tr>
+                
+              <tr>
+                  <td style="width: 20%;" height="30">
+                      <label class="etiquetaTestig">Nombre completo:</label>
+                  </td>
+                  <td style="width: 30%;" height="30">
+                    <input class="txt_valor" value="faoa" type="text" size="100%" onkeyup="this.value = this.value.toUpperCase();"/>
+                  </td>   
+            </tr>
+                
+                <tr>
+                  <td style="width: 20%;" height="30">
+                      <label class="etiquetaTestig">Nombre completo:</label>
+                  </td>
+                  <td style="width: 30%;" height="30">
+                        <select style="width: 50%;">
+                            <option  >MELVIN</option>
+                            <option >MELVIN</option>
+                            <option >MELVIN</option>
+                        </select>
+                  </td>   
+            </tr>
+            
+                
+                
+                <tr >
+                    <td colspan="2" style="text-align: center">
+                  
+                        <table style="width: 100%; text-align: center;">
+                            <tr><td style="width: 25%">
+                      <input class="btn_enviar" value="boton" type="submit">  </td><td style="width: 25%">
+                      <input class="btn_enviar" value="boton" type="submit">  </td>
+                            <td style="width: 25%">
+                      <input class="btn_enviar" value="boton" type="submit">  </td>
+                            <td style="width: 25%">
+                      <input class="btn_enviar" value="boton" type="submit">  </td></tr>
+                            
+                  </table>
+                      
+                    </td>
+                     
+                    
+                  
+            </tr>
+            
+                
+                
+        </table>
+        </div>
+        <label>hopjjn</label>
+        
+        <div id="table3" align="center">       
+          
+            
+            <table border="1">
+          
+                <tr>
+                    <td style="background-color: cornflowerblue;color: white;text-align: center;" height="50" colspan="2" style="text-align: center;">
+                        <label>Sum: $180</label>
+                    </td>
+                </tr>
+                
+              <tr>
+                  <td style="width: 20%;" height="30">
+                      <label class="etiquetaTestig">Nombre completo:</label>
+                  </td>
+                  <td style="width: 30%;" height="30">
+                    <input  value="faoa" type="text" size="100%" onkeyup="this.value = this.value.toUpperCase();"/>
+                  </td>   
+            </tr>
+                
+                <tr>
+                  <td style="width: 20%;" height="30">
+                      <label class="etiquetaTestig">Nombre completo:</label>
+                  </td>
+                  <td style="width: 30%;" height="30">
+                        <select style="width: 50%;">
+                            <option  >MELVIN</option>
+                            <option >MELVIN</option>
+                            <option >MELVIN</option>
+                        </select>
+                  </td>   
+            </tr>
+            
+                
+                
+                <tr >
+                    <td colspan="2" style="text-align: center">
+                  
+                        <table style="width: 100%; text-align: center;">
+                            <tr><td style="width: 25%">
+                      <input  value="boton" type="submit">  </td><td style="width: 25%">
+                      <input  value="boton" type="submit">  </td>
+                            <td style="width: 25%">
+                      <input  value="boton" type="submit">  </td>
+                            <td style="width: 25%">
+                      <input  value="boton" type="submit">  </td></tr>
+                            
+                  </table>
+                      
+                    </td>
+                     
+                    
+                  
+            </tr>
+            
+                
+                
+        </table>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+    </body>
 
-
-</table>
-
-</body>
-
+    
+    
+    
+    
+    
 </html>
